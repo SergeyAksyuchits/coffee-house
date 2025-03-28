@@ -28,8 +28,6 @@ header .center {
     font-weight: 600;
     font-size: 16px;
     color: #403F3D;
-
-
 }
 
 header .right {
@@ -49,13 +47,13 @@ header .cup {
 
 .title {
     background-image: url(fon.jpg);
-    height: 644px;
-    max-width: 1360px;
     border-radius: 40px;
     padding: 100px;
     background-repeat: no-repeat;
-    background-size: contain;
     margin-top: 20px;
+    width: 1360;
+
+
 }
 
 .title .main {
