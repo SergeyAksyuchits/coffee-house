@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+
+body {
+    background: #E1D4C9;
+    width: 1360px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+header .logo {
+    width: 100px;
+    height: 60px;
+}
+
+header .center {
+    display: flex;
+    gap: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #403F3D;
+
+
+}
+
+header .right {
+    display: flex;
+    align-items: center;
+}
+
+header .right p {
+    font-weight: 600;
+    font-size: 16px;
+    color: #403F3D;
+}
+
+header .cup {
+    margin-left: 8px;
+}
+
+.title {
+    background-image: url(fon.jpg);
+    height: 644px;
+    max-width: 1360px;
+    border-radius: 40px;
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 20px;
+}
+
+.title .main {
+    width: 530px;
+}
+
+.title .main .text span {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 72px;
+    line-height: 105%;
+    color: #B0907A;
+}
+
+.title .main .text {
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 105%;
+    color: #E1D4C9;
+}
+
+.title .main p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #E1D4C9;
+    margin-top: 40px;
+}
+
+.title .main button {
+    width: 200px;
+    height: 64px;
+    border-radius: 100px;
+    background: #E1D4C9;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #403F3D;
+    margin-top: 40px;
+}
