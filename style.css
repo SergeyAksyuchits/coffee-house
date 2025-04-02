@@ -11,11 +11,22 @@ body {
 }
 
 header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #E1D4C9;
+}
+
+header .container {
     display: flex;
     justify-content: space-between;
+    padding-top: 20px;
     align-items: center;
-    margin-top: 20px;
+    width: 1360px;
+    margin: auto;
 }
+
 
 header .logo {
     width: 100px;
@@ -28,6 +39,11 @@ header .center {
     font-weight: 600;
     font-size: 16px;
     color: #403F3D;
+}
+
+header .center p:hover {
+    border-bottom: 2px solid #403F3D;
+    padding: 4px;
 }
 
 header .right {
@@ -43,19 +59,20 @@ header .right p {
 
 header .cup {
     margin-left: 8px;
-    background-repeat: no-repeat;
-
 }
 
+header .right:hover {
+    border-bottom: 2px solid #403F3D;
+    padding: 4px;
+}
+
+
 .title {
-    background-image: url(fon.jpg);
+    background-image: url(./img/fon.jpg);
     border-radius: 40px;
     padding: 100px;
     background-repeat: no-repeat;
-    margin-top: 20px;
-    width: 1360;
-
-
+    margin-top: 100px;
 }
 
 .title .main {
@@ -97,9 +114,20 @@ header .cup {
     margin-top: 40px;
 }
 
+.title .main button .menuhover {
+    display: flex;
+    padding-left: 64px;
+    gap: 8px;
+}
 
+.title .main button img {
+    display: none;
+}
 
-
+.title .main button:hover img {
+    display: block;
+    align-items: baseline;
+}
 
 .first .text {
     font-weight: 600;
@@ -109,24 +137,20 @@ header .cup {
     color: #403F3D;
     margin-top: 100px;
     color: #403F3D;
-
 }
 
 .first .text span {
     color: #B0907A;
-
 }
 
 .first .main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .first .bot {
     width: 480px;
-
 }
 
 .first .bot h2 {
@@ -268,7 +292,7 @@ header .cup {
     border-radius: 100px;
     border-width: 1px;
     border: 1px solid #665F55;
-    background: #E1D4C9;
+    background: #FFFFFF;
 }
 
 .closed .text .apple .allapple {
@@ -294,6 +318,49 @@ header .cup {
     color: #403F3D;
 }
 
+.closed .apple .imghover {
+    display: none;
+    padding-left: 8px;
+}
+
+.closed .text .apple:hover img {
+    display: none;
+}
+
+.closed .text .apple:hover .imghover {
+    display: block;
+}
+
+.closed .text .apple:hover {
+    background-color: #665F55;
+
+    & p {
+        color: #E1D4C9;
+    }
+}
+
+.closed .google .imghover2 {
+    display: none;
+    /* padding-left: 8px; */
+}
+
+.closed .google:hover img {
+    display: none;
+}
+
+.closed .google:hover .imghover2 {
+    display: block;
+}
+
+.closed .text .google:hover {
+    background-color: #665F55;
+
+    & p {
+        color: #E1D4C9;
+    }
+
+}
+
 .closed .text .google {
     width: 200px;
     height: 64px;
@@ -305,7 +372,7 @@ header .cup {
     border-radius: 100px;
     border-width: 1px;
     border: 1px solid #665F55;
-    background: #E1D4C9;
+    background: #FFFFFF;
     margin-left: 20px;
 }
 
@@ -342,18 +409,21 @@ footer {
     background: #665F55;
     margin-bottom: 40px;
     margin-top: 100px;
-
+    display: flex;
 }
 
-.con .text .sub {
-    width: 530px;
+footer .network .lasttext {
     font-weight: 600;
     font-size: 60px;
     line-height: 125%;
+    letter-spacing: 0%;
+    width: 530px;
     color: #E1D4C9;
+    padding-top: 100px;
+    padding-left: 100px;
 }
 
-.con .text .sub span {
+footer .network .lasttext span {
     font-weight: 600;
     font-style: italic;
     font-size: 60px;
@@ -361,53 +431,91 @@ footer {
     color: #B0907A;
 }
 
-.con .social {
+footer .network button {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border-width: 1px;
+    border: 1px solid #C1B6AD;
+    background: white;
+}
+
+footer .network .social {
     display: flex;
     gap: 12px;
-    margin-top: 40px;
-}
-
-.con .net {
-    padding-top: 100px;
     padding-left: 100px;
+    padding-top: 40px;
 }
 
-.con {
-    display: flex;
+footer .network .social button:hover {
+    background: #E1D4C9;
 }
 
-.con .contact h3 {
+footer .network .social .pick .imghover {
+    display: none;
+    margin: auto;
+}
+
+footer .network .social .pick:hover .img {
+    display: none;
+}
+
+footer .network .social .pick:hover .imghover {
+    display: block;
+}
+
+
+footer .contact h3 {
+    padding-top: 132px;
     font-weight: 600;
     font-size: 24px;
     line-height: 125%;
     color: #E1D4C9;
 }
 
-.con .contact .pin {
-    display: flex;
-    margin-top: 40px;
-}
-
-.con .contact .mobile {
-    display: flex;
-    margin-top: 16px;
-}
-
-.con .contact .time {
-    display: flex;
-    margin-top: 16px;
-}
-
-.con .contact {
-    padding-top: 132px;
-    margin-left: 100px;
-}
-
-.con .contact p {
+footer .contact {
+    font-family: Inter;
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
     color: #E1D4C9;
-    margin-left: 8px;
 }
 
+footer .contact .pin {
+    display: flex;
+    gap: 8px;
+    margin-top: 40px;
+    align-items: baseline;
+}
+
+footer .contact .mobile {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    align-items: baseline;
+}
+
+footer .contact .time {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    align-items: baseline;
+}
+
+footer .contact .pin:hover {
+    border-bottom: 2px solid #E1D4C9;
+    width: 182px;
+    padding: 4px;
+}
+
+footer .contact .mobile:hover {
+    border-bottom: 2px solid #E1D4C9;
+    width: 175px;
+    padding: 4px;
+}
+
+footer .contact .time:hover {
+    border-bottom: 2px solid #E1D4C9;
+    width: 262px;
+    padding: 4px;
+}

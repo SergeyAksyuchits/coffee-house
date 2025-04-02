@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #E1D4C9;
+    width: 1360px;
+    margin: auto;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #E1D4C9;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: center;
+    width: 1360px;
+    margin: auto;
+}
+
+header .center {
+    display: flex;
+    gap: 40px;
+}
+
+header .center p:hover {
+    border-bottom: 2px solid #403F3D;
+    padding: 4px;
+}
+
+header .center p {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #403F3D;
+}
+
+header .right {
+    display: flex;
+    align-items: center;
+}
+
+header .right p {
+    font-weight: 600;
+    font-size: 16px;
+    color: #403F3D;
+}
+
+header .cup {
+    margin-left: 8px;
+}
+
+header .right:hover {
+    border-bottom: 2px solid #403F3D;
+    padding: 4px;
+}
+
+.menu {
+    padding-top: 100px;
+}
+
+.menu .button {
+    display: flex;
+    justify-content: center;
+}
+
+.menu h1 {
+    width: 800px;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 125%;
+    text-align: center;
+    color: #403F3D;
+    margin-top: 20px;
+    padding-left: 280px;
+}
+
+.menu h1 span {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 60px;
+    line-height: 125%;
+    text-align: center;
+    color: #B0907A;
+}
+
+.menu div button {
+    margin-top: 40px;
+}
+
+.menu div .cup {
+    width: 115px;
+    height: 46px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    gap: 8px;
+    border-radius: 100px;
+    background: #E1D4C9;
+    display: flex;
+    align-items: center;
+    border: 1px solid #C1B6AD;
+}
+
+.menu div .cup .cupimg {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background: #C1B6AD;
+    align-content: center;
+}
+
+.menu .button button:hover {
+    background-color: #665F55;
+
+    & p {
+        color: #E1D4C9;
+    }
+}
+
+.menu div .cup p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #403F3D;
+}
+
+.menu div .kettle {
+    width: 90px;
+    height: 46px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    gap: 8px;
+    border-width: 1px;
+    border-radius: 100px;
+    border: 1px solid #C1B6AD;
+    background: #E1D4C9;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.menu div .kettle .kettleimg {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background: #C1B6AD;
+    align-content: center;
+}
+
+.menu div .kettle p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #403F3D;
+}
+
+.menu div .dessert {
+    width: 124px;
+    height: 46;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    gap: 8px;
+    border-width: 1px;
+    border-radius: 100px;
+    border: 1px solid #C1B6AD;
+    background: #E1D4C9;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.menu div .dessert .dessertimg {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background: #C1B6AD;
+    align-content: center;
+}
+
+.menu div .dessert p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #403F3D;
+}
+
+.coffee {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.coffee .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    height: 196px;
+}
+
+.coffee .irish {
+    display: block;
+    width: 310px;
+}
+
+.coffee .irish img {
+    width: 310px;
+    height: 310px;
+    border-radius: 40px;
+}
+
+.coffee .irish h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 125%;
+    color: #403F3D;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.coffee .irish .description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #403F3D;
+    margin-top: 20px;
+    padding-left: 20px;
+    width: 270px;
+}
+
+.coffee .irish .price {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 125%;
+    color: #403F3D;
+    margin-top: 12px;
+    padding-left: 20px;
+
+}
+
+footer {
+    height: 450px;
+    max-width: 1360px;
+    border-radius: 40px;
+    margin-top: 100px;
+    background: #665F55;
+    display: flex;
+}
+
+footer .network .lasttext {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 125%;
+    letter-spacing: 0%;
+    width: 530px;
+    color: #E1D4C9;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+footer .network .lasttext span {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 60px;
+    line-height: 125%;
+    color: #B0907A;
+}
+
+footer .network button {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border-width: 1px;
+    border: 1px solid #C1B6AD;
+    background: white;
+}
+
+footer .network .social {
+    display: flex;
+    gap: 12px;
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+footer .network .social button:hover {
+    background: #E1D4C9;
+}
+
+footer .network .social .pick .imghover {
+    display: none;
+    margin: auto;
+}
+
+footer .network .social .pick:hover .img {
+    display: none;
+}
+
+footer .network .social .pick:hover .imghover {
+    display: block;
+}
+
+footer .contact h3 {
+    padding-top: 132px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 125%;
+    color: #E1D4C9;
+}
+
+footer .contact {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #E1D4C9;
+}
+
+footer .contact .location p {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #E1D4C9;
+}
+
+footer .contact .pin {
+    display: flex;
+    gap: 8px;
+    margin-top: 40px;
+    align-items: baseline;
+}
+
+footer .contact .mobile {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    align-items: baseline;
+}
+
+footer .contact .time {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    align-items: baseline;
+}
+
+footer .contact .pin:hover {
+    border-bottom: 2px solid #E1D4C9;
+    width: 182px;
+    padding: 4px;
+}
+
+footer .contact .mobile:hover {
+    border-bottom: 2px solid #E1D4C9;
+    width: 175px;
+    padding: 4px;
+}
+
+footer .contact .time:hover {
+    border-bottom: 2px solid #E1D4C9;
+    width: 262px;
+    padding: 4px;
+}
